@@ -10,10 +10,12 @@ class Header extends Component {
                 <div className="center">
                     { /* <!-- LOGO --> */}
                     <div id="logo">
+                        <NavLink activeClassName="active" to="/home">
                         <img src={logo} className="app-logo" alt="Logotipo" />
                         <span id="brand">
                             <strong>CRUD </strong>Artículos
-                    </span>
+                        </span>
+                        </NavLink>
                     </div>
 
                     { /* <!-- MENU --> */}
@@ -23,8 +25,9 @@ class Header extends Component {
                                 <NavLink activeClassName="active" to="/home">Inicio</NavLink>
                             </li>
                             <li>
-                                <NavLink activeClassName="active" to="/blog">Blog</NavLink>
+                                <NavLink activeClassName="active" to="/blog">Todos los artículos</NavLink>
                             </li>
+                            {/*
                             <li>
                                 <NavLink activeClassName="active" to="/formulario">Formulario</NavLink>
                             </li>
@@ -34,6 +37,7 @@ class Header extends Component {
                             <li>
                                 <NavLink to="/pruebas/Luis/Penaloza">Pagina 2</NavLink>
                             </li>
+                            */}
                         </ul>
                     </nav>
 

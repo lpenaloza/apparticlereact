@@ -159,7 +159,7 @@ class EditArticle extends Component {
                             </div>
 
                             { <div className="form-group">
-                                <input type="file" name="file0" onChange={this.fileChange}  />
+                                {/*<input type="file" name="file0" onChange={this.fileChange}  />*/}
                                 {article.image !== null &&
                                     <div className="image-wrap">
                                         <img src={this.url + 'get-image/' + article.image} alt={article.title} className="thumb" />
@@ -168,7 +168,7 @@ class EditArticle extends Component {
                             </div>
                             }
                             <div className="clearfix"></div>
-                            {/*<input type="submit" value="Guardar" className="btn btn-success" />*/}
+                            {<input type="submit" value="Guardar" className="btn btn-success" />}
 
                         </form>
                     }

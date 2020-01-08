@@ -62,7 +62,7 @@ class Formulario extends Component {
             <div id="formulario">
                 <div className="center">
                     <div id="content">
-                        <h1 className="subheader">Formulario</h1>
+                        <h1 className="subheader">Formulario de contacto</h1>
                         {/* datos del formulario */}
                         {this.state.user.nombre &&
                             this.state.user.apellidos &&

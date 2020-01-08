@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import Sidebar from './Sidebar';
+/* Import Redux store and the actions */
+import configureStore from '../store/configureStore';
+import { toggleContactForm, handleInputChange } from '../actions';
 
 class Formulario extends Component {
 
@@ -19,7 +22,7 @@ class Formulario extends Component {
         e.preventDefault();
         
         var genero = 'hombre';
-
+        const store = configureStore();
         if(this.generoHombreRef.current.checked) {
             genero = this.generoHombreRef.current.value;
         } else if(this.generoMujerRef.current.checked) {
@@ -38,6 +41,16 @@ class Formulario extends Component {
         this.setState({
             user: user
         })
+
+        store.subscribe(() =>
+            console.log(store.getState())
+        ) 
+
+        /* returns isContactFormHidden returns false */
+        store.dispatch(toggleContactForm());
+        /* returns isContactFormHidden returns false */
+        store.dispatch(toggleContactForm());
+        store.dispatch(handleInputChange('nombre', this.nombreRef.current.value))
 
     }
 

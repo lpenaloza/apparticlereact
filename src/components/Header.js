@@ -29,7 +29,7 @@ class Header extends Component {
                             </li>
                             {
                             <li>
-                                <NavLink activeClassName="active" to="/formulario">Formulario</NavLink>
+                                <NavLink activeClassName="active" to="/formulario">Contacto</NavLink>
                             </li>
                             /*
                             <li>

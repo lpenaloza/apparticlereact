@@ -5,7 +5,7 @@ const Footer = () => {
         <footer id="footer">
             <div className="center">
                 <p>
-                    &copy; APP con react y node Luis Peñaloza Guette
+                    &copy; APP con react y node Luis Alfredo Peñaloza Guette
                 </p>
             </div>
         </footer>

@@ -6,7 +6,6 @@ import Sidebar from './Sidebar';
 import Moment from 'react-moment';
 import 'moment/locale/es';
 import { Link, Redirect } from 'react-router-dom';
-//import { createStore } from 'redux';
 
 //const store = createStore(() => { }, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 class Article extends Component {
@@ -24,8 +23,6 @@ class Article extends Component {
 
     getArticle = () => {
         var id = this.props.match.params.id;
-        //const action = { type: 'setCity', value: 'barranquilla'};
-        //store.dispatch(action);
         axios.get(this.url + 'article/' + id)
             .then(res =>{
                 
